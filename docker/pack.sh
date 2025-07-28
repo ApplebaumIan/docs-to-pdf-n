@@ -10,5 +10,5 @@ else
   OS=$1
 fi
 yarn pack 
-rm -f "docker/${OS}/docs-to-pdf-latest.tgz"
-mv docs-to-pdf-v[0-9]*.tgz "docker/${OS}/docs-to-pdf-latest.tgz"
+rm -f "docker/${OS}/docs-to-pdf-n-latest.tgz"
+mv docs-to-pdf-n-v[0-9]*.tgz "docker/${OS}/docs-to-pdf-n-latest.tgz"
