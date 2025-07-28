@@ -1,6 +1,6 @@
 {
   "name": "docs-to-pdf-n",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "Generate PDF from Docusaurus forked from Jean Humann @jean-humann",
   "main": "lib/cli.js",
   "scripts": {
