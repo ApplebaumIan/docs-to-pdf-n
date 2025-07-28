@@ -2,7 +2,8 @@
   "name": "docs-to-pdf-n",
   "version": "0.6.7",
   "description": "Generate PDF from Docusaurus forked from Jean Humann @jean-humann",
-  "main": "lib/cli.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
