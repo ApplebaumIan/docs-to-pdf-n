@@ -1,7 +1,7 @@
 {
-  "name": "docs-to-pdf",
-  "version": "0.6.2",
-  "description": "Generate PDF from Docusaurus",
+  "name": "docs-to-pdf-n",
+  "version": "0.6.3",
+  "description": "Generate PDF from Docusaurus forked from Jean Humann @jean-humann",
   "main": "lib/cli.js",
   "scripts": {
     "dev": "tsc --watch",
@@ -23,13 +23,13 @@
     "docusaurus",
     "gitbook"
   ],
-  "homepage": "https://github.com/jean-humann/docs-to-pdf",
-  "author": "Jean Humann <jean.humann@gmail.com> (https://github.com/jean-humann)",
+  "homepage": "https://github.com/applebaumian/docs-to-pdf",
+  "author": "Ian Appleabaum <ian.tyler@electricbluefish.com> (https://github.com/applebaumian)",
   "license": "MIT",
   "dependencies": {
     "@types/fs-extra": "^11.0.1",
     "chalk": "^4.1.2",
-    "commander": "^11.0.0",
+    "commander": "^11.0.0",node
     "console-stamp": "^3.1.1",
     "express": "^4.18.2",
     "puppeteer": "^23.1.0",
