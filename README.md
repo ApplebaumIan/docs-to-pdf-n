@@ -1,8 +1,8 @@
 # Docs to PDF
 
-[![npm](https://img.shields.io/npm/v/docs-to-pdf?label=NPM%20STABLE&style=for-the-badge)](https://www.npmjs.com/package/docs-to-pdf)
-![node-current](https://img.shields.io/node/v/docs-to-pdf?style=for-the-badge)
-![npm](https://img.shields.io/npm/dt/docs-to-pdf?style=for-the-badge)
+[![npm](https://img.shields.io/npm/v/docs-to-pdf-n?label=NPM%20STABLE&style=for-the-badge)](https://www.npmjs.com/package/docs-to-pdf-n)
+![node-current](https://img.shields.io/node/v/docs-to-pdf-n?style=for-the-badge)
+![npm](https://img.shields.io/npm/dt/docs-to-pdf-n?style=for-the-badge)
 [![Codecov](https://img.shields.io/codecov/c/github/jean-humann/docs-to-pdf/branch/master?style=for-the-badge&token=YMY82958X4)](https://codecov.io/gh/jean-humann/docs-to-pdf)
 ![GitHub](https://img.shields.io/github/license/jean-humann/docs-to-pdf?style=for-the-badge)
 
@@ -10,17 +10,19 @@
 
 This is a PDF generator from document website such as `docusaurus`. This is a fork of [mr-pdf](https://github.com/KohheePeace/mr-pdf) which was not maintained anymore.
 Feel free to contribute to this project.
+> **📋 Attribution**: This package (`docs-to-pdf-n`) is a fork of the original [docs-to-pdf](https://github.com/jean-humann/docs-to-pdf) repository by [@jean-humann](https://github.com/jean-humann). All credit for the original work goes to the original authors and contributors.
+
 
 ## 📦 Installation
 
 ```shell
-npm install -g docs-to-pdf
+npm install -g docs-to-pdf-n
 ```
 
 ## 🚀 Quick Start
 
 ```shell
-npx docs-to-pdf --initialDocURLs="https://docusaurus.io/docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://docusaurus.io/img/docusaurus.png" --coverTitle="Docusaurus v2"
+npx docs-to-pdf-n --initialDocURLs="https://docusaurus.io/docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://docusaurus.io/img/docusaurus.png" --coverTitle="Docusaurus v2"
 ```
 
 
@@ -29,13 +31,13 @@ npx docs-to-pdf --initialDocURLs="https://docusaurus.io/docs/" --contentSelector
 For [Docusaurus v2](https://docusaurus.io/docs)
 
 ```shell
-npx docs-to-pdf docusaurus --initialDocURLs="https://docusaurus.io/docs/"
+npx docs-to-pdf-n docusaurus --initialDocURLs="https://docusaurus.io/docs/"
 ```
 
 OR
 
 ```shell
-npx docs-to-pdf --initialDocURLs="https://docusaurus.io/docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://docusaurus.io/img/docusaurus.png" --coverTitle="Docusaurus v2"
+npx docs-to-pdf-n --initialDocURLs="https://docusaurus.io/docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://docusaurus.io/img/docusaurus.png" --coverTitle="Docusaurus v2"
 ```
 
 ## 🍗 CLI Global Options
@@ -89,13 +91,13 @@ npx docs-to-pdf --initialDocURLs="https://docusaurus.io/docs/" --contentSelector
 `command`:
 
 ```shell
-npx docs-to-pdf docusaurus --initialDocURLs="https://docusaurus.io/docs/"
+npx docs-to-pdf-n docusaurus --initialDocURLs="https://docusaurus.io/docs/"
 ```
 
 OR
 
 ```shell
-npx docs-to-pdf --initialDocURLs="https://docusaurus.io/docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://docusaurus.io/img/docusaurus.png" --coverTitle="Docusaurus v2"
+npx docs-to-pdf-n --initialDocURLs="https://docusaurus.io/docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://docusaurus.io/img/docusaurus.png" --coverTitle="Docusaurus v2"
 ```
 
 ### Docusaurus v1 - Legacy
@@ -109,22 +111,22 @@ npx docs-to-pdf --initialDocURLs="https://docusaurus.io/docs/" --contentSelector
 `command`:
 
 ```shell
-npx docs-to-pdf docusaurus --initialDocURLs="https://docusaurus.io/docs/en/installation" --version=1
+npx docs-to-pdf-n docusaurus --initialDocURLs="https://docusaurus.io/docs/en/installation" --version=1
 ```
 
 OR
 
 ```shell
-npx docs-to-pdf --initialDocURLs="https://docusaurus.io/docs/en/installation" --contentSelector="article" --paginationSelector=".docs-prevnext > a.docs-next" --excludeSelectors=".fixedHeaderContainer,footer.nav-footer,#docsNav,nav.onPageNav,a.edit-page-link,div.docs-prevnext" --cssStyle=".navPusher {padding-top: 0;}" --pdfMargin="20"
+npx docs-to-pdf-n --initialDocURLs="https://docusaurus.io/docs/en/installation" --contentSelector="article" --paginationSelector=".docs-prevnext > a.docs-next" --excludeSelectors=".fixedHeaderContainer,footer.nav-footer,#docsNav,nav.onPageNav,a.edit-page-link,div.docs-prevnext" --cssStyle=".navPusher {padding-top: 0;}" --pdfMargin="20"
 ```
 
 
 #### PR to add new docs is welcome here... 😸
 
-## 📄 How `docs-to-pdf` works
+## 📄 How `docs-to-pdf-n` works
 
 1. [puppeteer](https://pptr.dev/) can make html to PDF like you can print HTML page in chrome browser
-2. so, the idea of docs-to-pdf is **generating one big HTML through looping page link, then run [`page.pdf()`](https://github.com/puppeteer/puppeteer/blob/main/docs/api/puppeteer.page.pdf.md)** from puppeteer to generate PDF.
+2. so, the idea of docs-to-pdf-n is **generating one big HTML through looping page link, then run [`page.pdf()`](https://github.com/puppeteer/puppeteer/blob/main/docs/api/puppeteer.page.pdf.md)** from puppeteer to generate PDF.
 
 ![docs-to-pdf-diagram](https://user-images.githubusercontent.com/29557494/90359040-c8fb9780-e092-11ea-89c7-1868bc32919f.png)
 
