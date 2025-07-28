@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
 
-  docs-to-pdf:
+  docs-to-pdf-n:
     build:
       context: ./alpine
     command:

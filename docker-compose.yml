@@ -2,9 +2,9 @@ version: '3.9'
 
 services:
 
-  docs-to-pdf:
+  docs-to-pdf-n:
     build:
-      context: docker/alpine
+      context: alpine
     command:
     - bash
     - -c
