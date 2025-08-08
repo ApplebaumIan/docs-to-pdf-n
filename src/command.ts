@@ -118,6 +118,7 @@ export function makeProgram() {
       .option(
         '--waitForRender <timeout>',
         'wait for document render in milliseconds',
+        parseInt,
       )
       .option('--headerTemplate <html>', 'html template for page header')
       .option('--footerTemplate <html>', 'html template for page footer')
@@ -129,7 +130,7 @@ export function makeProgram() {
       .option(
         '--protocolTimeout <timeout>',
         'timeout setting for individual protocol calls in milliseconds',
-        commaSeparatedList,
+        parseInt,
       )
       .option('--filterKeyword <filterKeyword>', 'meta keyword to filter pages')
       .option(
